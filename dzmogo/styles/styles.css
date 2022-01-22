@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Thinking_of_Betty";
-  src: url("dzmogo/fonts/Thinking_of_Betty.ttf") format("truetype");
+  src: url("fonts/Thinking_of_Betty.ttf") format("truetype");
   font-style: normal;
 
 }
@@ -9,7 +9,7 @@
 header {
   width: 100%;
   height: 920px;
-  background-image: url("dzmogo/pictures/header/eagle.png");
+  background-image: url("pictures/header/eagle.png");
   background-position: center;
   background-repeat: no-repeat;
   margin-left: auto;
@@ -59,7 +59,7 @@ nav img:active {
 
 
 .logo {
-  background-image: url("dzmogo/icons/mogo1.png");
+  background-image: url("icons/mogo1.png");
   width: 86px;
   height: 23px;
   margin-left: 20%;
@@ -488,49 +488,49 @@ header .morebtn:active {
 
 .surf {
   background-color: rgb(149, 225, 211);
-  background-image: url("dzmogo/pictures/work/surf1.png");
+  background-image: url("pictures/work/surf1.png");
   width: 480px;
   height: 390px;
 }
 
 .bridge {
   background-color: rgb(0, 0, 0);
-  background-image: url("dzmogo/pictures/work/bridge.png");
+  background-image: url("pictures/work/bridge.png");
   width: 480px;
   height: 390px;
 }
 
 .roof {
   background-color: rgb(0, 0, 0);
-  background-image: url("dzmogo/pictures/work/roof.png");
+  background-image: url("pictures/work/roof.png");
   width: 480px;
   height: 390px;
 }
 
 .orange {
   background-color: rgb(255, 127, 80);
-  background-image: url("dzmogo/pictures/work/orangehouse.png");
+  background-image: url("pictures/work/orangehouse.png");
   width: 480px;
   height: 390px;
 }
 
 .jelly {
   background-color: rgb(149, 225, 211);
-  background-image: url("dzmogo/pictures/work/jellyfish2.png");
+  background-image: url("pictures/work/jellyfish2.png");
   width: 480px;
   height: 780px;
 }
 
 .windows {
   background-color: rgb(149, 225, 211);
-  background-image: url("dzmogo/pictures/work/windows.png");
+  background-image: url("pictures/work/windows.png");
   width: 480px;
   height: 390px;
 }
 
 .dome {
   background-color: rgb(0, 0, 0);
-  background-image: url("dzmogo/pictures/work/dome.png");
+  background-image: url("pictures/work/dome.png");
   width: 480px;
   height: 390px;
 }
@@ -601,7 +601,7 @@ header .morebtn:active {
 
 
 .footerleft .logo {
-  background-image: url("dzmogo/icons/MoGo.png");
+  background-image: url("icons/MoGo.png");
   margin: inherit;
   width: 130px;
   height: 34px;
@@ -745,19 +745,19 @@ header .morebtn:active {
 }
 
 .fire {
-  background: url("dzmogo/pictures/blog/fire.png");
+  background: url("pictures/blog/fire.png");
   width: 120px;
   height: 80px;
 }
 
 .blue {
-  background-image: url("dzmogo/pictures/blog/blue.png");
+  background-image: url("pictures/blog/blue.png");
   width: 120px;
   height: 80px;
 }
 
 .guitar {
-  background-image: url("dzmogo/pictures/blog/guitar.png");
+  background-image: url("pictures/blog/guitar.png");
   width: 120px;
   height: 80px;
 }
@@ -819,57 +819,57 @@ header .morebtn:active {
 
 
 .inst1 {
-  background-image: url("dzmogo/pictures/instagram/inst1.png");
+  background-image: url("pictures/instagram/inst1.png");
   width: 88px;
   height: 88px;
 }
 
 .inst2 {
-  background-image: url("dzmogo/pictures/instagram/inst2.png");
+  background-image: url("pictures/instagram/inst2.png");
   width: 88px;
   height: 88px;
 }
 
 .inst3 {
-  background-image: url("dzmogo/pictures/instagram/inst3.png");
+  background-image: url("pictures/instagram/inst3.png");
   width: 88px;
   height: 88px;
 }
 
 .inst4 {
-  background-image: url("dzmogo/pictures/instagram/inst4.png");
+  background-image: url("pictures/instagram/inst4.png");
   width: 88px;
   height: 88px;
 }
 
 .inst5 {
-  background-image: url("dzmogopictures/instagram/inst5.png");
+  background-image: url("pictures/instagram/inst5.png");
   width: 88px;
   height: 88px;
 }
 
 .inst6 {
-  background-image: url("dzmogo/pictures/instagram/inst6.png");
+  background-image: url("pictures/instagram/inst6.png");
   width: 88px;
   height: 88px;
 }
 
 .inst7 {
-  background-image: url("dzmogo/pictures/instagram/inst7.png");
+  background-image: url("pictures/instagram/inst7.png");
   width: 88px;
   height: 88px;
 
 }
 
 .inst8 {
-  background-image: url("dzmogo/pictures/instagram/inst8.png");
+  background-image: url("pictures/instagram/inst8.png");
   width: 88px;
   height: 88px;
 
 }
 
 .inst9 {
-  background-image: url("dzmogo/pictures/instagram/inst9.png");
+  background-image: url("pictures/instagram/inst9.png");
   width: 88px;
   height: 88px;
 }
