@@ -1,32 +1,35 @@
-@font-face {
-  font-family: "Thinking_of_Betty";
-  src: url("../fonts/Thinking_of_Betty.ttf") format("truetype");
-  font-style: normal;
-
-}
-
-
-header {
+.topblock {
+  max-width: 1920px;
   width: 100%;
-  height: 920px;
+  height: 950px;
   background-image: url("../pictures/header/eagle.png");
   background-position: center;
   background-repeat: no-repeat;
-  margin-left: auto;
-  margin-right: auto;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+header {
+  max-width: 1200px;
+  width: 100%;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
 nav {
+  max-width: 600px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 620px;
-  height: auto;
-  margin-left: 50%;
-  padding-top: 30px;
+  -ms-flex-pack: justify;
+  justify-content: space-around;
+
+
 
 }
 
@@ -41,17 +44,19 @@ nav a {
 nav a:hover {
   border-bottom: 2px solid rgb(252, 227, 138);
   margin-bottom: -2px;
-  color:rgb(252, 227, 138);
+  color: rgb(252, 227, 138);
 }
 
 nav a:active {
-  color:rgb(149, 225, 211);
+  color: rgb(149, 225, 211);
   border-bottom: 2px solid rgb(149, 225, 211);
 }
+
 nav img:hover {
   border-bottom: 2px solid rgb(252, 227, 138);
   margin-bottom: -2px;
 }
+
 nav img:active {
   border-bottom: 2px solid rgb(149, 225, 211);
   margin-bottom: -2px;
@@ -60,52 +65,47 @@ nav img:active {
 
 .logo {
   background-image: url("../icons/mogo1.png");
+  background-position: center;
+  background-repeat: no-repeat;
   width: 86px;
-  height: 23px;
-  margin-left: 20%;
-  margin-top: -20px;
+  height: 24px;
+
 
 }
 
-header h1 {
-  font-size: 72px;
-  font-family: "Thinking_of_Betty";
-  font-weight: lighter;
+.topblock h1 {
+  font-size: 52px;
+  font-family: 'Kaushan Script';
   color: rgb(255, 255, 255);
   text-align: center;
-  padding-top: 5%;
+  padding-top: 7%;
+
 }
 
-header p {
+.topblock p {
   font-size: 120px;
   font-family: "Roboto";
   color: rgb(255, 255, 255);
   font-weight: bold;
   text-transform: uppercase;
-  line-height: 1;
   text-align: center;
-  margin-top: -1%;
+  margin-top: -20px;
+
 
 }
 
-header .line {
+.line {
   background-color: rgb(255, 255, 255);
   width: 60px;
   height: 3px;
   margin-left: auto;
   margin-right: auto;
 }
-.headerbtn {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  height: auto;
-}
 
-header .morebtn {
-  cursor: pointer;
-  width: 150px;
-  height: 48px;
+.morebtn {
+  max-width: 160px;
+  width: 100%;
+  height: 40px;
   font-size: 14px;
   font-family: "Roboto";
   color: rgb(255, 255, 255);
@@ -115,341 +115,153 @@ header .morebtn {
   border-width: 3px;
   border-color: rgb(255, 255, 255);
   background-color: Transparent;
-  background-repeat: no-repeat;
-  line-height: 1.2;
-  padding-top: 5px;
-  text-align: center;
-  margin-left: 46%;
-  margin-top: 60px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+
+
 }
-header .morebtn:hover {
-  color:rgb(243, 129, 129);
+
+.topblock .morebtn:hover {
+  color: rgb(243, 129, 129);
   border-color: rgb(243, 129, 129);
 }
-header .morebtn:visited {
+
+.topblock .morebtn:visited {
   color: rgb(51, 51, 51);
   border-color: rgb(51, 51, 51);
 }
-header .morebtn:active {
-  color:rgb(149, 225, 211);
+
+.topblock .morebtn:active {
+  color: rgb(149, 225, 211);
   border-color: rgb(149, 225, 211);
 }
 
-.work {
-  width: 1200px;
-  height: 620px;
+.form1 {
+  display: block;
+  max-width: 160px;
+  width: 100%;
+  color: white;
+  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.work h2 {
-  font-size: 24px;
-  font-family: "Thinking_of_Betty";
-  color: rgb(51, 51, 51);
-  text-align: center;
-  padding-top: 80px;
+.slider {
+  max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+    margin-left: auto;
+    margin-right: auto;
+ 
+}
+
+.intro .line {
+  background: rgb(243, 129, 129);
+  background: linear-gradient(90deg, rgba(243, 129, 129, 1) 0%, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 1) 100%);
+  height: 3px;
+  width: 100%;
 
 }
 
-.work h3 {
-  font-size: 30px;
-  font-family: "Roboto";
-  color: rgb(51, 51, 51);
-  font-weight: bold;
+
+.intro p {
+  margin-top: 10px;
+  font-size: 24px;
+  color: rgb(255, 255, 255);
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
+
+}
+
+.intro {
+  width: 24%;
+
 }
 
 .work .line {
-  background-color: rgb(243, 129, 129);
-  width: 60px;
+
+  background-color: rgb(255, 255, 255);
   height: 3px;
-  z-index: 50;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.photography, .creativity, .webdesign, .seo, .htmlcss, .digital {
-  width: 260px;
-  height: 62px;
-  margin-top: 100px;
-}
-
-.photography h4 {
-  font-size: 16px;
-  font-family: "Roboto";
-  color: rgb(51, 51, 51);
-  text-transform: uppercase;
-  font-weight: lighter;
-  text-align: left;
-
-}
-
-.creativity h4 {
-  font-size: 16px;
-  font-family: "Roboto";
-  color: rgb(51, 51, 51);
-  text-transform: uppercase;
-  font-weight: lighter;
-  text-align: left;
-
-}
-
-.webdesign h4 {
-  font-size: 16px;
-  font-family: "Roboto";
-  color: rgb(51, 51, 51);
-  text-transform: uppercase;
-  font-weight: lighter;
-  text-align: left;
-
-}
-
-.htmlcss h4 {
-  font-size: 16px;
-  font-family: "Roboto";
-  color: rgb(51, 51, 51);
-  text-transform: uppercase;
-  font-weight: lighter;
-  text-align: left;
-
-}
-
-.seo h4 {
-  font-size: 16px;
-  font-family: "Roboto";
-  color: rgb(51, 51, 51);
-  text-transform: uppercase;
-  font-weight: lighter;
-  text-align: left;
-
-}
-
-.digital h4 {
-  font-size: 16px;
-  font-family: "Roboto";
-  color: rgb(51, 51, 51);
-  text-transform: uppercase;
-  font-weight: lighter;
-  text-align: left;
-
-}
-
-.photography p {
-  font-size: 14px;
-  font-family: "Roboto";
-  color: rgb(153, 153, 153);
-  line-height: 1.6;
-  text-align: left;
-
-}
-
-.webdesign p {
-  font-size: 14px;
-  font-family: "Roboto";
-  color: rgb(153, 153, 153);
-  line-height: 1.6;
-  text-align: left;
-
-}
-
-.creativity p {
-  font-size: 14px;
-  font-family: "Roboto";
-  color: rgb(153, 153, 153);
-  line-height: 1.6;
-  text-align: left;
-
-}
-
-.seo p {
-  font-size: 14px;
-  font-family: "Roboto";
-  color: rgb(153, 153, 153);
-  line-height: 1.6;
-  text-align: left;
-
-}
-
-.htmlcss p {
-  font-size: 14px;
-  font-family: "Roboto";
-  color: rgb(153, 153, 153);
-  line-height: 1.6;
-  text-align: left;
-
-}
-
-.digital p {
-  font-size: 14px;
-  font-family: "Roboto";
-  color: rgb(153, 153, 153);
-  line-height: 1.6;
-  text-align: left;
-
-}
-
-
-.photography .alarm {
-  display: inline-block;
-  position: absolute;
-  margin-top: -95px;
-  margin-left: -50px;
-}
-
-.webdesign .LINEGRAPH {
-  display: inline-block;
-  position: absolute;
-  margin-top: -95px;
-  margin-left: -50px;
-}
-
-.creativity .COMPUTER {
-  display: inline-block;
-  position: absolute;
-  margin-top: -95px;
-  margin-left: -50px;
-}
-
-.seo .BOOK {
-  display: inline-block;
-  position: absolute;
-  margin-top: -95px;
-  margin-left: -50px;
-}
-
-.htmlcss .HOME {
-  display: inline-block;
-  position: absolute;
-  margin-top: -95px;
-  margin-left: -50px;
-}
-
-.digital .IMAGE {
-  display: inline-block;
-  position: absolute;
-  margin-top: -95px;
-  margin-left: -50px;
-}
-
-.work .row1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.work .row2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-
-}
-
-.line2 {
-  background-color: rgb(229, 229, 229);
-  width: 1200px;
-  height: 1px;
-  margin-top: -80px;
-
-}
-
-.tablewrapper {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 130px;
   width: 100%;
-  height: 270px;
-  background-color: rgb(149, 225, 211);
-}
-
-.boxes {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  height: 270px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  text-align: center;
-}
-
-.boxes h3 {
-  font-size: 72px;
-  font-family: "Roboto";
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  text-transform: uppercase;
-  padding-top: 20px;
-}
-
-.boxes p {
-  font-size: 14px;
-  font-family: "Roboto";
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-  margin-top: -50px;
-}
-
-.box1 {
-  width: 240px;
-  height: 270px;
-  border-left: 1px solid rgb(255, 255, 255);
 
 }
 
-.box2 {
-  width: 240px;
-  height: 270px;
-  border-left: 1px solid rgb(255, 255, 255);
-
-}
-
-.box3 {
-  width: 240px;
-  height: 270px;
-  border-left: 1px solid rgb(255, 255, 255);
-
-}
-
-.box4 {
-  width: 240px;
-  height: 270px;
-  border-left: 1px solid rgb(255, 255, 255);
-
-
-}
-
-.box5 {
-  width: 240px;
-  height: 270px;
-  border-right: 1px solid rgb(255, 255, 255);
-  border-left: 1px solid rgb(255, 255, 255);
-}
-
-.wedo h2 {
+.work p {
+  margin-top: 10px;
   font-size: 24px;
-  font-family: "Thinking_of_Betty";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  text-align: left;
+
+}
+
+.work {
+  width: 24%;
+  opacity: 0.5;
+}
+
+.about p {
+  margin-top: 10px;
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  text-align: left;
+
+}
+
+.about .line {
+  background-color: rgb(255, 255, 255);
+  height: 3px;
+  width: 100%;
+
+}
+
+.about {
+  width: 24%;
+  opacity: 0.5;
+}
+
+.contacts p {
+  margin-top: 10px;
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  text-align: left;
+
+}
+
+.contacts .line {
+  background-color: rgb(255, 255, 255);
+  height: 3px;
+  width: 100%;
+
+}
+
+.contacts {
+  width: 24%;
+  opacity: 0.5;
+}
+
+.aboutus h2 {
+  font-size: 24px;
+  font-family: 'Kaushan Script';
   color: rgb(51, 51, 51);
   text-align: center;
   padding-top: 80px;
 
 }
 
-.wedo {
+.aboutus {
+  max-width: 1200px;
   width: 100%;
-  height: auto;
   margin-left: auto;
   margin-right: auto;
 }
 
-.wedo h3 {
+.aboutus h3 {
   font-size: 30px;
   font-family: "Roboto";
   color: rgb(51, 51, 51);
@@ -458,7 +270,7 @@ header .morebtn:active {
   text-align: center;
 }
 
-.wedo .line {
+.aboutus .line {
   background-color: rgb(243, 129, 129);
   width: 60px;
   height: 3px;
@@ -466,8 +278,8 @@ header .morebtn:active {
   margin-right: auto;
 }
 
-.wedo p {
- margin: inherit;
+.aboutus p {
+  margin: inherit;
   margin-top: 20px;
   width: 940px;
   height: 200px;
@@ -478,127 +290,1124 @@ header .morebtn:active {
   text-align: center;
 
 }
-.img {
+
+.aboutus .imgs {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+
+.imgs .story1:hover {
+  background-image: -moz-linear-gradient(90deg, rgb(252, 227, 138, 0.3) 0%, rgb(243, 129, 129, 0.3) 100%);
+  background-image: -webkit-linear-gradient(90deg, rgb(252, 227, 138, 0.3) 0%, rgb(243, 129, 129, 0.3) 100%);
+  background-image: -ms-linear-gradient(90deg, rgb(252, 227, 138, 0.3) 0%, rgb(243, 129, 129, 0.3) 100%);
+
+}
+
+.imgs .story1 {
+  width: 32%;
+  background-image: url("../pictures/aboutus/story.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.imgs .story1:hover {
+  background-image: url("../pictures/aboutus/storystory.png");
+
+
+}
+
+.imgs .story2 {
+  width: 32%;
+  background-image: url("../pictures/aboutus/story2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.imgs .story2:hover {
+  background-image: url("../pictures/aboutus/story22.png");
+
+}
+
+.imgs .story3 {
+  width: 32%;
+  background-image: url("../pictures/aboutus/story3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.imgs .story3:hover {
+  background-image: url("../pictures/aboutus/story33.png");
+
+}
+
+.tablewrapper {
+  max-width: 1920px;
+  width: 100%;
+  height: 270px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 130px;
+  background-color: rgb(149, 225, 211);
+}
+
+.boxes {
+
+  max-width: 1200px;
+  width: 100%;
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+
+
+.boxes p {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+
+
+}
+
+.boxes strong {
+  font-size: 62px;
+  font-family: "Roboto";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+
+
+}
+
+.box1 {
+  width: 25%;
+  border-left: 1px solid rgb(255, 255, 255);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.box2 {
+  width: 25%;
+  border-left: 1px solid rgb(255, 255, 255);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.box3 {
+  width: 25%;
+  border-left: 1px solid rgb(255, 255, 255);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.box4 {
+  width: 25%;
+  border-left: 1px solid rgb(255, 255, 255);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.box5 {
+  width: 25%;
+  border-right: 1px solid rgb(255, 255, 255);
+  border-left: 1px solid rgb(255, 255, 255);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.service {
+  max-width: 1200px;
+  width: 100%;
+  height: 620px;
+  margin: 0 auto;
+}
+
+.service h2 {
+  font-size: 24px;
+  font-family: 'Kaushan Script';
+  color: rgb(51, 51, 51);
+  text-align: center;
+  padding-top: 80px;
+
+}
+
+.service h3 {
+  font-size: 30px;
+  font-family: "Roboto";
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.service .line {
+  background-color: rgb(243, 129, 129);
+  width: 60px;
+  height: 3px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.photography, .creativity, .webdesign, .seo, .htmlcss, .digital {
+  width: 25%;
+  height: 62px;
+  margin-top: 100px;
+}
+
+.photography h4 ,.creativity h4 , .webdesign h4, .htmlcss h4 , .seo h4, .digital h4 {
+  font-size: 16px;
+  font-family: "Roboto";
+  color: rgb(51, 51, 51);
+  text-transform: uppercase;
+  font-weight: lighter;
+  text-align: left;
+  display: flex; 
+  justify-content: flex-start;
+  align-items: flex-start;
+  
+
+}
+.alarm, .linegraph, .computer, .book, .home, .image, .seo p  {
+  margin-right: 10px;
+}
+
+.photography p, .webdesign p, .creativity p, .seo p, .htmlcss p, .digital p {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(153, 153, 153);
+  line-height: 1.6;
+  text-align: left;
+
+}
+
+.service .row1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.service .row2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+
+}
+
+.line2 {
+  background-color: rgb(229, 229, 229);
+  width: 1200px;
+  height: 1px;
+  margin-top: -81px;
+
+}
+.features h2 {
+  font-size: 24px;
+  font-family: 'Kaushan Script';
+  color: rgb(51, 51, 51);
+  text-align: center;
+  padding-top: 80px;
+
+}
+
+.features h3 {
+  font-size: 30px;
+  font-family: "Roboto";
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.features .line {
+  background-color: rgb(243, 129, 129);
+  width: 60px;
+  height: 3px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.features {
+  max-width: 1920px;
+  width: 100%;
+  height: 850px;
+  background-image: url("../pictures/features/featureback.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+}
+.features .tablet {
+  width: 33%;
+  height: 580px;
+  background-image: url("../pictures/features/tablet.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 65px;
+  
+}
+.features .smart {
+  width: 25%;
+    height: 470px;
+    background-image: url(../pictures/features/smart.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    margin-left: 980px;
+    margin-top: -380px;
+    
+  
+}
+.service2 {
+  max-width: 1200px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.service2 h2 {
+  font-size: 24px;
+  font-family: 'Kaushan Script';
+  color: rgb(51, 51, 51);
+  text-align: center;
+  padding-top: 80px;
+
+}
+
+.service2 h3 {
+  font-size: 30px;
+  font-family: "Roboto";
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.service2 .line {
+  background-color: rgb(243, 129, 129);
+  width: 60px;
+  height: 3px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.service2 p {
+  margin: inherit;
+  margin-top: 20px;
+  width: 80%;
+  font-size: 15px;
+  font-family: "Roboto";
+  color: rgb(153, 153, 153);
+  line-height: 1.6;
+  text-align: center;
+
+}
+.service2 .info {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.info .photo {
+  
+  width: 45%;
+  height: 380px;
+  background-image: url("../pictures/service2/photo.png");
+}
+.info ul {
+  width: 45%;
+  list-style: none;
+  margin-top: -10px
+  
+}
+
+li {
+  overflow: hidden;
+  border: 1px solid rgb(153, 153, 153);
+  margin-top: 10px;
+}
+
+li h1 {
+  display: flex;
+  align-items: center;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-family: "Roboto";
+  cursor: pointer;
+  margin-left: 20px;
+}
+li h1::before {
+  content:url("../icons/arrow_down.png");
+  position: absolute;
+  top: 7px;
+  left: 477px;
+  
+}
+li h1:focus::before {
+  transform: rotate(180deg);
+}
+li p {
+  display: none;
+}
+li h1:focus ~ p {
+  display: block;
+  text-align: left;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+.quote {
+  margin-top: 150px;
+  max-width: 1920px;
+  width: 100%;
+  height: 290px;
+  background-color: rgb(248, 248, 248) ;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.text {
+  width: 80%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.text p {
+  margin: 0;
+  text-align: left;
+}
+.text2 {
+  width: 50%;
+}
+.quote .speech {
+  width: 150px;
+  height: 150px;
+  background-image: url(../icons/speech.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 3px solid rgb(149, 225, 211);
+}
+.jon p {
+  margin: 0;
+  padding-right: 20px;
+  font-size:16px;
+  font-family: 'Kaushan Script';
+  color: rgb(51, 51, 51);
+}
+.jon {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+ 
+}
+.jon .jonline {
+  background-color: rgb(243, 129, 129);
+  width: 60px;
+  height: 3px;
+  margin-right: auto;
+}
+.arrowleft {
+  transform: rotate(270deg);
+  
+ 
+}
+.arrowright {
+  transform: rotate(90deg);
+ 
+ 
+}
+.arrows {
+  position: absolute;
+  max-width: 1100px;
+  width: 100%;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -145px;
+  margin-left: 50px;
+}
+.ourteam {
+  max-width: 1200px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ourteam h2 {
+  font-size: 24px;
+  font-family: 'Kaushan Script';
+  color: rgb(51, 51, 51);
+  text-align: center;
+  padding-top: 80px;
+
+}
+
+.ourteam h3 {
+  font-size: 30px;
+  font-family: "Roboto";
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.ourteam .line {
+  background-color: rgb(243, 129, 129);
+  width: 60px;
+  height: 3px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ourteam p {
+  margin: inherit;
+  margin-top: 20px;
+  width: 80%;
+  font-size: 15px;
+  font-family: "Roboto";
+  color: rgb(153, 153, 153);
+  line-height: 1.6;
+  text-align: center;
+
+}
+
+.ourteam .we {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+.ourteam .we .mat {
+  background-image: url("../pictures/ourteam/matthew.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 30%;
+  height: 450px;
+  cursor: pointer;
+}
+.ourteam .we .mat:hover {
+  background-image: url("../pictures/ourteam/matthew2.png");
+
+
+}
+.ourteam .we .chris {
+  background-image: url("../pictures/ourteam/christopher.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 30%;
+  height: 450px;
+  cursor: pointer;
+}
+.ourteam .we .chris:hover {
+  background-image: url("../pictures/ourteam/christopher1.png");
+
+
+}
+.ourteam .we .mich {
+  background-image: url("../pictures/ourteam/michael.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 30%;
+  height: 450px;
+  cursor: pointer;
+}
+.ourteam .we .mich:hover {
+  background-image: url("../pictures/ourteam/michael1.png");
+
+
+}
+.ourteam .wetext {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+}
+.mattext , .christext , .michtext {
+  width: 30%;
+}
+.wetext p {
+  font-size: 15px;
+  font-family: "Roboto";
+  color: rgb(153, 153, 153);
+  margin-top: 0px;
+  width: 100%;
+  
+}
+.wetext h3 {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-family: "Roboto";
+}
+.logos {
+  margin-top: 125px;
+  max-width: 1920px;
+  width: 100%;
+  height: 250px;
+  background-color: #f8f8f8;
+  margin-left: auto;
+ margin-right: auto;
+}
+.partners {
+  max-width: 1200px;
+  width: 100%;
+ margin-left: auto;
+ margin-right: auto;
+ padding-top: 65px;
+ 
+}
+.partners img {
+  width: 100%;
+}
+
+.ourwork h2 {
+  font-size: 24px;
+  font-family: 'Kaushan Script';
+  color: rgb(51, 51, 51);
+  text-align: center;
+  padding-top: 80px;
+
+}
+
+.ourwork {
+  max-width: 1920px;
+  width: 100%;
+ margin: 0 auto;
+}
+
+.ourwork h3 {
+  font-size: 30px;
+  font-family: "Roboto";
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.ourwork .line {
+  background-color: rgb(243, 129, 129);
+  width: 60px;
+  height: 3px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ourwork p {
+  margin: inherit;
+  margin-top: 20px;
+  width: 940px;
+  font-size: 15px;
+  font-family: "Roboto";
+  color: rgb(153, 153, 153);
+  line-height: 1.6;
+  text-align: center;
+
+}
+
+.img {
+  margin-top: 100px;
   width: 100%;
   height: 780px;
-  background-color: rgb(149, 225, 211);
+  cursor: pointer;
+  
 }
 
 .surf {
   background-color: rgb(149, 225, 211);
-  background-image: url("../pictures/work/surf1.png");
+  background-image: url("../pictures/work/surf.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 480px;
   height: 390px;
+}
+.surf:hover {
+  background-image: url("../pictures/work/surf1.png");
 }
 
 .bridge {
   background-color: rgb(0, 0, 0);
   background-image: url("../pictures/work/bridge.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 480px;
   height: 390px;
+}
+.bridge:hover {
+  background-image: url("../pictures/work/bridge1.png");
 }
 
 .roof {
   background-color: rgb(0, 0, 0);
   background-image: url("../pictures/work/roof.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 480px;
   height: 390px;
+}
+.roof:hover {
+  background-image: url("../pictures/work/roof1.png");
 }
 
 .orange {
   background-color: rgb(255, 127, 80);
   background-image: url("../pictures/work/orangehouse.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 480px;
   height: 390px;
 }
+.orange:hover {
+  background-image: url("../pictures/work/hoverorangehouse.png");
+  
+}
+
 
 .jelly {
   background-color: rgb(149, 225, 211);
   background-image: url("../pictures/work/jellyfish2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 480px;
   height: 780px;
+}
+.jelly:hover {
+  background-image: url("../pictures/work/jelly1.png");
 }
 
 .windows {
   background-color: rgb(149, 225, 211);
   background-image: url("../pictures/work/windows.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 480px;
   height: 390px;
+}
+.windows:hover {
+  background-image: url("../pictures/work/windows1.png");
 }
 
 .dome {
   background-color: rgb(0, 0, 0);
   background-image: url("../pictures/work/dome.png");
+   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 480px;
   height: 390px;
 }
+.dome:hover {
+  background-image: url("../pictures/work/dome1.png");
+}
 
-.wedo .img {
+.ourwork .img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 1920px;
-  height: auto;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.wedo .col1 {
+.ourwork .col1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 25%;
-  height: auto;
+  -ms-flex-direction: column;
+  flex-direction: column;
+ 
 }
 
-.wedo .col2 {
+.ourwork .col2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 25%;
-  height: auto;
+  -ms-flex-direction: column;
+  flex-direction: column;
+ 
 }
 
-.wedo .col3 {
+.ourwork .col3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 25%;
-  height: auto;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 
-.wedo .col4 {
+.ourwork .col4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 960px;
-  height: auto;
+  -ms-flex-direction: column;
+  flex-direction: column;
+
+}
+.comment {
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  width: 100%;
+  height: 290px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.comment .joshtext {
+  width: 80%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin: 0 auto;
+  
+}
+.comment .joshtext p {
+  margin: 0;
+  text-align: left;
+}
+.comment .joshtext2 {
+  width: 50%;
+}
+.comment .joshtext2 p {
+  font-family: "Roboto";
+  color: rgb(153, 153, 153);;
+  font-size: 14px;
+ 
+}
+.comment .testimonial .joshspeech {
+  width: 150px;
+  height: 150px;
+  background-image: url(../pictures/comment/josh.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%; 
+  
+}
+.comment .josh p {
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 20px;
+  font-size:16px;
+  font-family: 'Kaushan Script';
+  color: rgb(51, 51, 51);
+}
+.comment .josh {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+ 
+}
+.comment .josh .joshline {
+  background-color: rgb(243, 129, 129);
+  width: 60px;
+  height: 3px;
+ 
+}
+.comment .josharrowleft {
+  transform: rotate(270deg);
+
+}
+.comment .josharrowright {
+  transform: rotate(90deg);
+}
+.comment .josharrows {
+  position: absolute;
+  max-width: 1100px;
+  width: 100%;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.whatpeoplesay {
+  max-width: 1920px;
+  width: 100%;
+  height: 800px;
+  background-image: url("../pictures/whatpeoplesay/wpsback.png");
+  margin: 0 auto;
+}
+.whatpeoplesay h2 {
+  font-size: 24px;
+  font-family: 'Kaushan Script';
+  color: rgb(51, 51, 51);
+  text-align: center;
+  padding-top: 80px;
+
+}
+.whatpeoplesay h3 {
+  font-size: 30px;
+  font-family: "Roboto";
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
 }
 
+.whatpeoplesay .line {
+  background-color: rgb(243, 129, 129);
+  width: 60px;
+  height: 3px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wpswarpper {
+  max-width: 1200px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-between;
+}
 
+.commentline {
+  background-color: rgb(243, 129, 129);
+  width: 60px;
+  height: 3px;
+  
+}
+.commentphoto1 {
+  width: 230px;
+  height: 110px;
+  background-image: url("../pictures/whatpeoplesay/wps1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 20px;
+}
+.comment1 p {
+  font-family: "Roboto";
+  color: rgb(153, 153, 153);;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+.comment1 h4 {
+  font-size: 16px;
+    font-family: Roboto;
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.wps1 {
+  
+  display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.commentphoto2 {
+  width: 230px;
+  height: 110px;
+  background-image: url("../pictures/whatpeoplesay/wps2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 20px;
+}
+.commentphoto3 {
+  width: 230px;
+  height: 110px;
+  background-image: url("../pictures/whatpeoplesay/wps3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 20px;
+}
+.commentphoto4 {
+  width: 230px;
+  height: 110px;
+  background-image: url("../pictures/whatpeoplesay/wps4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 20px;
+}
+.wpsrow1 {
+  width: 48%;
+}
+.wpsrow2 {
+  width: 48%;
+}
+.blog {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+
+}
+.blog h2 {
+  font-size: 24px;
+  font-family: 'Kaushan Script';
+  color: rgb(51, 51, 51);
+  text-align: center;
+  padding-top: 80px;
+
+}
+.blog h3 {
+  font-size: 30px;
+  font-family: "Roboto";
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.blog .line {
+  background-color: rgb(243, 129, 129);
+  width: 60px;
+  height: 3px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blog1photo {
+  width: 100%;
+  height: 240px;
+  background-image: url("../pictures/ourstories/blog1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.blog2photo {
+  width: 100%;
+  height: 240px;
+  background-image: url("../pictures/ourstories/blog2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.blog3photo {
+  width: 100%;
+  height: 240px;
+  background-image: url("../pictures/ourstories/blog3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.blog1 {
+  width: 33%;
+}
+.blog2 {
+  width: 33%;
+}
+.blog3 {
+  width: 33%;
+}
+.blog1 h4, .blog2 h4, .blog3 h4 {
+  font-size: 16px;
+    font-family: Roboto;
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    font-weight: lighter;
+    padding-left: 10px;
+}
+.blog1 p, .blog2 p, .blog3 p {
+  font-family: "Roboto";
+  color: rgb(153, 153, 153);
+  font-size: 12px;
+  padding-left: 10px;
+  
+}
+.greyline {
+  background-color: rgb(229, 229, 229);
+    width: 380px;
+    height: 1px;
+    margin-left: 10px;
+}
+.blogs {
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+}
+.blogs img {
+ padding-left: 10px;
+ padding-right: 5px;
+ 
+}
+.map {
+  max-width: 1920px;
+  width: 100%;
+  height: 200px;
+  background-image: url("../pictures/map/mapback.png");
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.map .pin {
+ padding-top: 30px;
+  width: 25px;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.map h3 {
+  font-size: 30px;
+  font-family: "Roboto";
+  color: rgb(243, 129, 129);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.map .line {
+  background-color: rgb(243, 129, 129);
+  width: 60px;
+  height: 3px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .footerleft .logo {
   background-image: url("../icons/MoGo.png");
@@ -653,8 +1462,8 @@ header .morebtn:active {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   width: 260px;
   height: 15px;
   margin-top: 20px;
@@ -667,8 +1476,8 @@ header .morebtn:active {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 
 }
 
@@ -687,12 +1496,13 @@ header .morebtn:active {
 
 
 }
+
 .email:hover {
   outline: none;
   border-style: solid;
   border-width: 1px;
   border-color: rgb(149, 225, 211);
- 
+
 }
 
 
@@ -705,13 +1515,9 @@ header .morebtn:active {
   font-size: 14px;
   font-family: "Roboto";
   color: rgb(255, 255, 255);
-  font-weight: bold;
   text-transform: uppercase;
-  line-height: 1.2;
-  text-align: center;
-
-
 }
+
 .btnsub:hover {
   background-color: rgb(243, 129, 129);
 }
@@ -729,8 +1535,8 @@ header .morebtn:active {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -ms-flex-pack: start;
+  justify-content: start;
 }
 
 
@@ -787,10 +1593,10 @@ header .morebtn:active {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 .footermid .row2 {
@@ -799,10 +1605,10 @@ header .morebtn:active {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 .footermid .row3 {
@@ -811,10 +1617,10 @@ header .morebtn:active {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 
@@ -822,56 +1628,63 @@ header .morebtn:active {
   background-image: url("../pictures/instagram/inst1.png");
   width: 88px;
   height: 88px;
+  border: 0.5px solid white;
 }
 
 .inst2 {
   background-image: url("../pictures/instagram/inst2.png");
   width: 88px;
   height: 88px;
+  border: 0.5px solid white;
 }
 
 .inst3 {
   background-image: url("../pictures/instagram/inst3.png");
   width: 88px;
   height: 88px;
+  border: 0.5px solid white;
 }
 
 .inst4 {
   background-image: url("../pictures/instagram/inst4.png");
   width: 88px;
   height: 88px;
+  border: 0.5px solid white;
 }
 
 .inst5 {
   background-image: url("../pictures/instagram/inst5.png");
   width: 88px;
   height: 88px;
+  border: 0.5px solid white;
 }
 
 .inst6 {
   background-image: url("../pictures/instagram/inst6.png");
   width: 88px;
   height: 88px;
+  border: 0.5px solid white;
 }
 
 .inst7 {
   background-image: url("../pictures/instagram/inst7.png");
   width: 88px;
   height: 88px;
-
+  border: 0.5px solid white;
 }
 
 .inst8 {
   background-image: url("../pictures/instagram/inst8.png");
   width: 88px;
   height: 88px;
-
+  border: 0.5px solid white;
 }
 
 .inst9 {
   background-image: url("../pictures/instagram/inst9.png");
   width: 88px;
   height: 88px;
+  border: 0.5px solid white;
 }
 
 .footerright .row1, .row2, .row3 {
@@ -879,8 +1692,8 @@ header .morebtn:active {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .footerright h2 {
@@ -903,12 +1716,13 @@ header .morebtn:active {
   line-height: 1.800;
   text-align: left;
 }
+
 .footerright a:hover {
- color:rgb(252, 227, 138) ;
+  color: rgb(252, 227, 138);
 }
 
 .footerright a:active {
-  color:rgb(149, 225, 211);
+  color: rgb(149, 225, 211);
 }
 
 footer {
@@ -921,8 +1735,8 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 
 }
 
@@ -947,12 +1761,5 @@ footer {
   font-weight: lighter;
   line-height: 1.2;
   text-align: center;
-}.topheader{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    background: #E3FFD2;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
 }
-	
+
